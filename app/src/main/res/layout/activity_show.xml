@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_src"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <EditText
+            android:background="@drawable/myshape"
+            android:drawableLeft="@drawable/ic_youtube_searched_for_black_24dp"
+            android:layout_toRightOf="@+id/img_src"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <TextView
+        android:gravity="center"
+        android:text="商品分类"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/grid_view"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+    </GridView>
+    <com.bawei.sqw_zhoukao2.view.MyTextView
+        android:layout_margin="10dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="大王让我来巡山，寻了南山寻北山,寻了北山寻西山,寻了西山寻东山"
+        android:background="#000"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recy_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+</LinearLayout>
